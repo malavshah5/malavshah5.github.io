@@ -1,72 +1,91 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <h1 style = "text-align:center">BFS Visualizer</h1>
-    <p style="text-align:center">
-        <label>Number of Rows: </label>
-        <input type = "text"
-        
-    </p>
-    <p style="text-align:center">
-        <label>Number of Columns: </label>
-        <input type = "text"
-    </p>
-    <p style="text-align:center">
-        <label>Search Delay(ms): </label>
-        <input type = "text"    
-    </p>
-    <div id = "buttons">
-        <div class = "center"></div>
-            <button id = "ChangeGrid">Change Grid Size</button>
-            <button id = "StartSearch">Start Search</button>
-            <button id = "QuickSerach">Quick Search</button>
+    <head>
+        <link rel="stylesheet" href="bfsstyles.css">
+
+    </head>
+    <body>
+        <h1 style = "text-align:center">BFS Visualizer</h1>
+        <p style="text-align:center">
+            <label>Number of Rows: </label>
+            <input type = "number">
+            
+        </p>
+        <p style="text-align:center">
+            <label>Number of Columns: </label>
+            <input type = "number">
+        </p>
+        <p style="text-align:center">
+            <label>Search Delay(ms): </label>
+            <input type = "number">   
+        </p>
+        <div class = "buttons">
+            <div class = "center">
+                <button id = "ChangeGrid">Change Grid Size</button>
+                <button id = "StartSearch">Start Search</button>
+                <button id = "QuickSerach">Quick Search</button>
+            </div>
         </div>
-    </div>
-    <div id = "morebuttons">
-        <div class = "center"></div>
-            <button id = "AddTarget">Add Target</button>
-            <button id = "RemoveTarget">Remove Target</button>
-            <button id = "ClearSearch">Clear Search</button>
-            <button id = "ClearGrid">Clear Grid</button>
+        <div class = "buttons">
+            <div class = "center">
+                <button id = "AddTarget">Add Target</button>
+                <button id = "RemoveTarget">Remove Target</button>
+                <button id = "ClearSearch">Clear Search</button>
+                <button id = "ClearGrid">Clear Grid</button>
+            </div>
+            
+            <h3 style = "text-align:center"> Number of Targets (max 3): 1</h3>
         </div>
-        <h3 style = "text-align:center"> Number of Targets (max 3): 1</h3>
-    </div>
-    <label class ="switches>">
-        <input type="checkbox">
-        <p>Toggle to create an obstacle (gray)</p>
-    </label>
-    <label class ="switches>">
-        <input type="checkbox">
-        <span class="slider round"></span>
-        <p>Toggle to move to starting spot (red)</p>
-    </label>
-    <label class ="switches>">
-        <input type="checkbox">
-        <span class="slider round"></span>
-        <p>Toggle to move the destination (black)</p>
-    </label>
-    <label class ="switches>">
-        <input type="checkbox">
-        <span class="slider round"></span>
-        <p>Toggle toclear obstacles (gray)</p>
-    </label>
-    <div class="cont" id = "gridholder" style = "touch-action: pinch-zoom;">
-        <div id="grid">
-            <div id -"row0" "style:display: flex; touch-action: pinch-zoom;"></div>
+        <div>
+            <div>
+                <div>
+                    <label class ="switches">
+                        <input type ="checkbox" id ="toggle" class="checkbox" />
+                        <span class="slider"></span>
+                        <p>Toggle to create obstacle (gray)</p>
+                    </label>
+                </div>
+                <div>
+                    <label class ="switches">
+                        <input type ="checkbox" id ="toggle" class="checkbox" />
+                        <span class="slider"></span>
+                        <p>Toggle to move starting spot (red)</p>
+                    </label>
+                </div>
+                <div>
+                    <label class ="switches">
+                        <input type ="checkbox" id ="toggle" class="checkbox" />
+                        <span class="slider"></span>
+                        <p>Toggle to move the destination (black)</p>
+                    </label>
+                </div>
+                <div>
+                    <label class ="switches">
+                        <input type ="checkbox" id ="toggle" class="checkbox" />
+                        <span class="slider"></span>
+                        <p>Toggle to clear obstacles(gray)</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="cont" id = "gridholder" style = "touch-action: pinch-zoom;">
+            <div id="grid">
+                <div id ="row0" "style:display: flex; touch-action: pinch-zoom;"></div>
+            </div>
+            <br>
         </div>
         <br>
-    </div>
-    <br>
-    <div class="cont">
-        <h3>
-            "Imporatnt for mobile users:"
-            <br>
-            "Use 2 fingers to scroll when inside the grid, 1 finger to modify the grid"
-        </h3>
-        <h1>Instruction:</h1>
-    </div>
-    <div class="cont">
-        <h2>Have Fun!</h2>
-    </div>
-</body>
+        <div class="cont">
+            <h3>
+                "Imporatnt for mobile users:"
+                <br>
+                "Use 2 fingers to scroll when inside the grid, 1 finger to modify the grid"
+            </h3>
+            <h1>Instruction:</h1>
+        </div>
+        <div class="cont">
+            <h2>Have Fun!</h2>
+        </div>
+        <script src = "BFSCode.js"></script>
+    </body>
 </html>
