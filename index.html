@@ -36,41 +36,30 @@
             
             <h3 style = "text-align:center"> Number of Targets (max 3): 1</h3>
         </div>
-        <div>
-            <div>
-                <div>
-                    <label class ="switches">
-                        <input type ="checkbox" id ="toggle" class="checkbox" />
-                        <span class="slider"></span>
-                        <p>Toggle to create obstacle (gray)</p>
-                    </label>
-                </div>
-                <div>
-                    <label class ="switches">
-                        <input type ="checkbox" id ="toggle" class="checkbox" />
-                        <span class="slider"></span>
-                        <p>Toggle to move starting spot (red)</p>
-                    </label>
-                </div>
-                <div>
-                    <label class ="switches">
-                        <input type ="checkbox" id ="toggle" class="checkbox" />
-                        <span class="slider"></span>
-                        <p>Toggle to move the destination (black)</p>
-                    </label>
-                </div>
-                <div>
-                    <label class ="switches">
-                        <input type ="checkbox" id ="toggle" class="checkbox" />
-                        <span class="slider"></span>
-                        <p>Toggle to clear obstacles(gray)</p>
-                    </label>
-                </div>
-            </div>
+        <div class = "toggleHolder">
+            <label class ="switches">
+                <input type ="checkbox" id ="toggle" class="checkbox" />
+                <span class="slider"></span>
+                <h6>Toggle to create obstacle (gray)</h6>
+            </label>
+            <label class ="switches">
+                <input type ="checkbox" id ="toggle" class="checkbox" />
+                <span class="slider"></span>
+                <h6>Toggle to move starting spot (red)</h6>
+            </label>
+            <label class ="switches">
+                <input type ="checkbox" id ="toggle" class="checkbox" />
+                <span class="slider"></span>
+                <h6>Toggle to move the destination (black)</h6>
+            </label>
+            <label class ="switches">
+                <input type ="checkbox" id ="toggle" class="checkbox" />
+                <span class="slider"></span>
+                <h6>Toggle to clear obstacles(gray)</h6>
+            </label>
         </div>
-        <div class="cont" id = "gridholder" style = "touch-action: pinch-zoom;">
-            <div id="grid">
-                <div id ="row0" "style:display: flex; touch-action: pinch-zoom;"></div>
+        <div class = "gridContainer" id = "gridholder" style = "touch-action: pinch-zoom;">
+            <div class = "grid" id = "grid" >
             </div>
             <br>
         </div>

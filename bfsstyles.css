@@ -1,8 +1,7 @@
 .buttons {
     text-align: center;
     margin: auto; 
-    max-width: 400px;
-       
+    max-width: 400px;      
 }
 
 .switches {
@@ -60,4 +59,39 @@ input:checked + .slider:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
- 
+
+.gridContainer {
+    text-align: center;
+}
+
+.grid {
+    display: inline-block;
+}
+
+.toggleHolder {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    touch-action: pinch-zoom;
+}
+
+.cell {
+    background-color: white;
+    display: inline-block;
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    padding-top: 2px;
+    touch-action: pinch-zoom;
+}
+
+.startingCell {
+    background-color: blue;
+}
+
+.targetCell {
+    background-color: gold;
+}
