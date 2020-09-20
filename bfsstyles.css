@@ -90,8 +90,67 @@ input:checked + .slider:before {
 
 .startingCell {
     background-color: blue;
+    display: inline-block;
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    padding-top: 2px;
+    touch-action: pinch-zoom;
+    
 }
 
 .targetCell {
     background-color: gold;
+    display: inline-block;
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    padding-top: 2px;
+    touch-action: pinch-zoom;
+}
+
+.seenCell {
+    background-color: green;
+    display: inline-block;
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    padding-top: 2px;
+    touch-action: pinch-zoom;
+}
+
+.pathFound {
+    background-color: black;
+    display: inline-block;
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    padding-top: 2px;
+    touch-action: pinch-zoom;
+}
+
+.currentCell {
+    background-color: red;
+    display: inline-block;
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    padding-top: 2px;
+    touch-action: pinch-zoom;
+}
+
+.queuedCell {
+    background-color: indigo;
+    display: inline-block;
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+    padding-top: 2px;
+    touch-action: pinch-zoom;
 }
